@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SARRA Case Study | Deendayal Verma</title>
+<meta name="description" content="How Deendayal Verma built, secured and deployed sarra.uk.gov.in for the Government of Uttarakhand: CERT-In VAPT “Safe to Host”, ITDA servers, zero-data-loss MongoDB migration.">
+<meta name="theme-color" content="#f4f0e8">
+<meta property="og:title" content="SARRA: building a live .gov.in portal end to end">
+<meta property="og:image" content="../assets/img/shots/sarra.webp">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/case.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="case-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <a class="nav__back" href="../index.html#work" data-transition data-label="Back to work"><span aria-hidden="true">←</span>All work</a>
+  <span class="nav__crumb">Case study 01 · SARRA</span>
+  <a class="nav__cta" href="../assets/docs/Deendayal_Verma_Resume.pdf" target="_blank" rel="noopener" data-cursor="Open">Résumé ↗</a>
+</header>
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="cs" id="main" style="--accent:var(--river)">
+<div class="wrap">
+  <div class="cs-top">
+    <span class="mono">Projects / Case study 01 · 2026</span>
+    <div class="cs-links">
+      <a class="cs-btn" href="https://sarra.uk.gov.in" target="_blank" rel="noopener" data-cursor="Visit"><i class="live"></i>sarra.uk.gov.in</a>
+      <a class="cs-btn" href="https://res.cloudinary.com/dmqe0e8k0/image/upload/v1784955737/Security_Audit_VAPT_Clearance_Certificate_CNPL26-27010726232_g5gwky.pdf" target="_blank" rel="noopener" data-cursor="Open">VAPT certificate ↗</a>
+    </div>
+  </div>
+
+  <section class="cs-hero">
+    <div>
+      <div class="cs-eyebrow">Government of Uttarakhand · Watershed Management Directorate</div>
+      <h1 class="cs-river">SARRA</h1>
+      <div class="cs-sub">Spring &amp; River Rejuvenation Authority web portal</div>
+      <p>I built the portal on my own and took it all the way to production: the app, the security audit, the government server and the database move.</p>
+      <div class="cs-facts">
+        <div class="cs-fact r"><b>Safe to Host</b><span>CERT-In empanelled VAPT</span></div>
+        <div class="cs-fact a"><b>0 data lost</b><span>cloud → on-prem MongoDB</span></div>
+        <div class="cs-fact"><b>.gov.in</b><span>live on ITDA servers</span></div>
+        <div class="cs-fact"><b>16 routes</b><span>server-rendered + SEO</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="stage" id="mapStage" data-cursor="Hover"><svg id="mapSvg" role="img" aria-label="Map of Uttarakhand’s 13 districts with rivers drawing from their springs"></svg><div class="tip" id="tip"></div></div>
+      <div class="cs-cap"><span class="mono">13 districts · Garhwal + Kumaon · hover a district</span><button class="cs-btn" id="replayMap" type="button">Replay rivers ↻</button></div>
+    </div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec">
+      <div class="no">00 — The live portal</div>
+      <h2>sarra.uk.gov.in, as citizens see it today</h2>
+    </div>
+    <div class="shot-wrap rv"><a class="shot" href="https://sarra.uk.gov.in" target="_blank" rel="noopener" data-cursor="Visit" style="display:block">
+      <span class="browser"><i></i><i></i><i></i><em>sarra.uk.gov.in</em></span>
+      <img src="../assets/img/shots/sarra.webp" alt="Home page of sarra.uk.gov.in, the Spring and River Rejuvenation Authority portal" width="1280" height="800" loading="lazy">
+    </a></div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">01 — Architecture</div>
+      <h2>Every layer, from the browser to the database</h2>
+      <p>I owned the whole path a request takes. Tap any box to see what I set up there.</p>
+    </div>
+    <div class="stage" id="archStage"><svg id="archSvg" role="img" aria-label="Request path: browser, SSL, IIS reverse proxy, PM2, Next.js and Express, MongoDB"></svg>
+      <div class="info" id="info"><b>Tap a layer</b><span>Requests flow left to right. The red frame marks the hardened edge.</span></div></div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">02 — Security audit</div>
+      <h2>Audited by a CERT-In empanelled firm, certified Safe to Host</h2>
+      <p>Codec Networks Pvt. Ltd. ran a VAPT audit on the portal. I led the fixes until it passed the re-test.</p>
+      <button class="cs-btn" id="replayAudit" type="button">Replay audit ↻</button>
+    </div>
+    <div class="stage audit" id="auditStage">
+      <div class="term"><div class="term__bar"><i></i><i></i><i></i></div><div id="term"></div></div>
+      <div class="stampbox"><svg id="stampSvg" viewBox="-180 -180 360 360" role="img" aria-label="Safe to Host stamp"></svg></div>
+    </div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">03 — Migration</div>
+      <h2>Moving the database onto government infrastructure</h2>
+      <p>The production MongoDB moved from the cloud to on-premise government servers with zero data loss. The admin CRM stayed connected throughout.</p>
+      <button class="cs-btn" id="replayMig" type="button">Replay migration ↻</button>
+    </div>
+    <div class="stage" id="migStage"><svg id="migSvg" role="img" aria-label="Cartoon pushes the MongoDB database from the cloud into a government server; data lost: 0"></svg></div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec">
+      <div class="no">04 — Inside the portal</div>
+      <h2>What citizens and officers use</h2>
+    </div>
+    <div class="feats">
+      <div class="feat rv"><div class="vis mini-map"><svg id="miniMap" viewBox="-24 -24 1048 957" aria-hidden="true"></svg></div><div class="txt"><div class="tag">Leaflet · KMZ</div><h3>Interactive watershed maps</h3><p>Watershed boundaries loaded from KMZ files onto a Leaflet map, district by district.</p></div></div>
+      <div class="feat rv"><div class="vis"><div class="form"><div class="row">ABSTRACT 55<span class="f"></span></div><div class="row">PRAROOP-1A<span class="f"></span></div><div class="row">PRAROOP-1B<span class="f"></span></div><div class="row">GW DPR<span class="f"></span></div></div></div><div class="txt"><div class="tag">Form builders</div><h3>Government forms, online</h3><p>Abstract 55, Praroop-1A/1B and Groundwater DPR forms rebuilt as web forms.</p></div></div>
+      <div class="feat rv"><div class="vis"><div class="tbl"><div><b>GARHWAL</b><span>Dehradun</span><span>Tehri Garhwal</span><span>Chamoli</span><span>…</span></div><div><b>KUMAON</b><span>Almora</span><span class="new">Nainital · Gaula</span><span>Pithoragarh</span><span>…</span></div></div></div><div class="txt"><div class="tag">One District One River</div><h3>A river for every district</h3><p>Map plus Kumaon and Garhwal tables. The Gaula river watershed (Nainital) was added from a standalone KML.</p></div></div>
+      <div class="feat rv"><div class="vis"><div class="seo" id="seo"></div></div><div class="txt"><div class="tag">Next.js SSR</div><h3>SEO across 16 routes</h3><p>Each of the 16 page routes is server-rendered with its own metadata.</p></div></div>
+      <div class="feat rv"><div class="vis"><div class="crm"><div class="side"><i></i><i></i><i></i><i></i></div><div class="bars"><i style="height:40%"></i><i style="height:75%;animation-delay:.3s"></i><i style="height:55%;animation-delay:.6s"></i><i style="height:90%;animation-delay:.9s"></i><i style="height:65%;animation-delay:1.2s"></i></div></div></div><div class="txt"><div class="tag">Admin CRM</div><h3>Content managed in-house</h3><p>A connected admin dashboard, so the directorate updates river conservation content itself.</p></div></div>
+      <div class="feat rv"><div class="vis" style="display:grid;place-items:center;background:#141312"><div style="font:400 44px/1 var(--f-poster);color:#fdfbf6;text-align:center;letter-spacing:.02em">NEXT.JS<br><span style="color:#5b9bff">EXPRESS</span><br><span style="color:#ff6b7c">MONGODB</span></div></div><div class="txt"><div class="tag">Stack</div><h3>Built and run by one developer</h3><p>Next.js, Node.js/Express and MongoDB, on Windows Server with IIS and PM2.</p></div></div>
+    </div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">05 — My role</div>
+      <h2>Full-stack developer and deployment engineer</h2>
+    </div>
+    <div class="hl">
+      <div class="rv"><div class="k">Build</div><b>Portal + CRM</b><p>Next.js pages with SSR and SEO, an Express REST API, MongoDB models, and the admin CRM the directorate uses daily.</p></div>
+      <div class="rv"><div class="k">Secure</div><b>VAPT remediation</b><p>A nonce-based CSP, inline styles moved out, emails obfuscated, SSL hardened on IIS and the firewall configured, then re-tested to “Safe to Host”.</p></div>
+      <div class="rv"><div class="k">Run</div><b>Gov. server ops</b><p>An IIS reverse proxy in front of Node, PM2 for uptime and logs, and the cloud-to-on-prem MongoDB migration with zero data lost.</p></div>
+    </div>
+  </section>
+
+  <a class="cs-next" href="yatrimap.html" data-transition data-label="Next case study" data-cursor="Next">
+    <span class="mono">Next case study · 02</span>
+    <b>YATRIMAP <i aria-hidden="true">→</i></b>
+  </a>
+  <div class="cs-foot">
+    <span class="mono">Deendayal Verma · Full-stack developer &amp; deployment engineer</span>
+    <span class="mono">Map: district boundaries from public data · river courses illustrative</span>
+  </div>
+</div>
+</main>
+
+<div class="wipe" id="wipe" aria-hidden="true"><span>Opening</span></div>
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/SplitText.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/js/lib/uk-map-data.js" defer></script>
+<script src="../assets/js/lib/toon.js" defer></script>
+<script src="../assets/js/lib/sarra.js" defer></script>
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/case.js" defer></script>
+</body>
+</html>

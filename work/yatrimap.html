@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YatriMap Case Study | Deendayal Verma</title>
+<meta name="description" content="YatriMap + TouristGo: travel booking for the Himalayas. Smart QR at 15+ hotels, QR-to-WhatsApp booking flow, atomic raft-seat pooling, server-verified Razorpay payments.">
+<meta name="theme-color" content="#f4f0e8">
+<meta property="og:title" content="YatriMap: travel booking for the Himalayas, built end to end">
+<meta property="og:image" content="../assets/img/shots/yatri-cover.webp">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/case.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="case-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <a class="nav__back" href="../index.html#work" data-transition data-label="Back to work"><span aria-hidden="true">←</span>All work</a>
+  <span class="nav__crumb">Case study 02 · YatriMap</span>
+  <a class="nav__cta" href="../assets/docs/Deendayal_Verma_Resume.pdf" target="_blank" rel="noopener" data-cursor="Open">Résumé ↗</a>
+</header>
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="cs" id="main" style="--accent:var(--green)">
+<div class="wrap">
+  <div class="cs-top">
+    <span class="mono">Projects / Case study 02 · Feb 2025 – Jun 2026</span>
+    <div class="cs-links">
+      <a class="cs-btn" href="https://yatrimap.com/" target="_blank" rel="noopener" data-cursor="Visit"><i class="live"></i>yatrimap.com</a>
+      <a class="cs-btn" href="https://smartqr.yatrimap.com/" target="_blank" rel="noopener">TouristGo app ↗</a>
+      <a class="cs-btn" href="https://api.yatrimap.com/public/impact" target="_blank" rel="noopener">Live numbers ↗</a>
+    </div>
+  </div>
+
+  <section class="cs-hero">
+    <div>
+      <div class="cs-eyebrow">Full-stack developer · travel-tech startup</div>
+      <h1>YATRI<span>MAP</span></h1>
+      <div class="cs-sub">Travel booking for the Himalayas, built end to end</div>
+      <p>Hotels, vehicle rentals and adventure activities in Uttarakhand. Plus TouristGo: hotels, cafés and shops sell trips through a QR code, and adventure companies run their whole booking desk from a phone.</p>
+      <p>I built the customer site, the Smart QR check-in system now at 15+ hotels, three admin dashboards (hotel, rental, Chardham), the TouristGo app and partner portal, and the REST APIs behind them. Real travellers book through it every day.</p>
+    </div>
+    <div>
+      <div class="stage" id="bungee" role="img" aria-label="Cartoon Deendayal bungee jumps from a bridge over the river; Bungee is the top activity" data-cursor="Jump" style="cursor:pointer"><svg id="bungeeSvg"></svg></div>
+      <div class="cs-cap"><span class="mono">Bungee · the most booked activity</span><button class="cs-btn" id="replayB" type="button">Jump again ↻</button></div>
+    </div>
+  </section>
+
+  <section style="padding:6px 0 30px">
+    <div class="spec"><div class="no" id="impactLabel">Impact · counted from the production database</div></div>
+    <div id="impact" style="margin-top:12px"></div>
+    <p class="note">Test bookings, staff and admin accounts, and unpaid or cancelled bookings are left out. Activity numbers are read live from the public impact API when it’s reachable; otherwise you see the 22 Oct 2026 snapshot.</p>
+  </section>
+
+  <section class="plate full">
+    <div class="spec">
+      <div class="no">01 — TouristGo</div>
+      <h2>Scan a QR, booked in under a minute, ticket on WhatsApp</h2>
+      <p>A traveller scans the QR at their hotel or café and books. The adventure company sees it on its phone, scans the ticket at check-in, and WhatsApp messages go out automatically at each step.</p>
+    </div>
+    <div class="qfwrap" id="qfwrap"><div class="qfscale" id="qfscale"><div id="qf"></div></div></div>
+    <div class="cs-cap"><span class="mono">Messages as sent by the automation · booking ID masked<span class="swipe"> · swipe →</span></span><button class="cs-btn" id="replayQ" type="button">Replay ↻</button></div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">02 — Raft Pool</div>
+      <h2>Rafting companies share seats in real time</h2>
+      <ul><li>Post “need 4 seats” or “2 seats free” for a slot</li><li>Requests expire in 20 minutes; offers close 10 minutes before the slot ends</li><li>A moved guest keeps the same booking ID and ticket</li><li>Seat claims are atomic, so two companies never take the same seats</li></ul>
+    </div>
+    <div class="stage svgstage" id="raftStage"><svg id="raftSvg" role="img" aria-label="Company A needs 4 seats; B and C claim at the same moment; only B’s atomic claim succeeds and four guests move to B’s raft"></svg></div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">03 — Payments</div>
+      <h2>The server decides what was paid</h2>
+      <p>Every Razorpay order is recorded with the bookings it covers. One cart payment is split across several bookings. A tampered amount or a reused payment is rejected.</p>
+    </div>
+    <div class="stage svgstage" id="payStage"><svg id="paySvg" role="img" aria-label="One cart payment is checked by the server and split into three bookings; a tampered payment bounces back"></svg></div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">04 — Where</div>
+      <h2>Rishikesh to Chopta, and on to Manali</h2>
+      <p>Hotels in Rishikesh, Haridwar, Mussoorie, Tehri, Chopta and Manali. Rental hubs in Rishikesh, Dehradun, Haridwar and Mussoorie. 28 activities across 6 destinations in 4 states.</p>
+    </div>
+    <div class="stage svgstage" id="mapStage2"><svg id="pinSvg" role="img" aria-label="Map of Uttarakhand with YatriMap destinations pinned"></svg></div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec">
+      <div class="no">05 — How it fits together</div>
+      <h2>Four front-ends, one API</h2>
+    </div>
+    <div class="stage svgstage" id="hubStage"><svg id="hubSvg" role="img" aria-label="Travellers, adventure companies and hotel teams use four apps that all talk to the YatriMap API, which uses MongoDB, Razorpay, Twilio WhatsApp and Resend email"></svg></div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">06 — In 24 seconds</div>
+      <h2>The whole story as a reel</h2>
+      <p>Impact, TouristGo, Raft Pool and payments, cut for a phone screen.</p>
+    </div>
+    <div class="reel">
+      <div class="shot-wrap rv"><a class="shot" href="https://yatrimap.com" target="_blank" rel="noopener" data-cursor="Visit" style="display:block">
+        <span class="browser"><i></i><i></i><i></i><em>yatrimap.com</em></span>
+        <img src="../assets/img/shots/yatri.webp" alt="yatrimap.com home page with destination search for rentals, activities, hotels and Chardham" width="1280" height="800" loading="lazy">
+      </a></div>
+      <div class="reel__phone"><video src="../assets/video/yatrimap-reel.mp4" muted loop playsinline preload="none" data-autoplay aria-label="YatriMap case study reel"></video></div>
+    </div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec"><div class="no">07 — Engineering highlights</div></div>
+    <div class="hl">
+      <div class="rv"><div class="k">WhatsApp automation</div><b>Each message sent once</b><p>Approved Twilio templates go out once per guest, even when a payment callback retries. Tickets are server-rendered PDFs behind signed links, and delivery receipts return through a verified webhook.</p></div>
+      <div class="rv"><div class="k">Booking desk</div><b>Walk-ins, scans, edits</b><p>Companies take walk-ins, scan tickets, collect cash or UPI, and edit a booking’s guests, price, date or slot. Every change is logged and every ticket updates.</p></div>
+      <div class="rv"><div class="k">Privacy by default</div><b>Public numbers, private people</b><p>The impact API shares only totals, activity types and anonymous trips. Names, phone numbers, booking IDs and partner revenue never leave the server.</p></div>
+    </div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec"><div class="no">Stack</div></div>
+    <div class="chips"><span>Next.js 15</span><span>React</span><span>Tailwind CSS</span><span>Framer Motion</span><span>Redux Toolkit</span><span>Zustand</span><span>Node.js</span><span>Express</span><span>MongoDB · Mongoose</span><span>JWT · Passport</span><span>Firebase sign-in</span><span>Razorpay</span><span>Twilio WhatsApp</span><span>Resend</span><span>PDFKit</span><span>Vercel</span></div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec"><div class="no">Proof · everything here is live</div></div>
+    <table class="proof-t">
+      <tr><td>Live booking numbers (JSON)</td><td><a href="https://api.yatrimap.com/public/impact" target="_blank" rel="noopener">api.yatrimap.com/public/impact</a></td></tr>
+      <tr><td>Customer website</td><td><a href="https://yatrimap.com" target="_blank" rel="noopener">yatrimap.com</a></td></tr>
+      <tr><td>TouristGo booking app</td><td><a href="https://smartqr.yatrimap.com/shop/Rishikesh/AGT-7D3AE3CE" target="_blank" rel="noopener">smartqr.yatrimap.com/shop/Rishikesh/AGT-7D3AE3CE</a></td></tr>
+    </table>
+  </section>
+
+  <a class="cs-next" href="hackbytecodex.html" data-transition data-label="Next case study" data-cursor="Next">
+    <span class="mono">Next case study · 03</span>
+    <b>HACKBYTECODEX <i aria-hidden="true">→</i></b>
+  </a>
+  <div class="cs-foot">
+    <span class="mono">Deendayal Verma · Full-stack developer</span>
+    <span class="mono">Partner and app screens are illustrations of the real flows</span>
+  </div>
+</div>
+</main>
+
+<div class="wipe" id="wipe" aria-hidden="true"><span>Opening</span></div>
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/SplitText.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/js/lib/uk-map-data.js" defer></script>
+<script src="../assets/js/lib/toon.js" defer></script>
+<script src="../assets/js/lib/yatri.js" defer></script>
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/case.js" defer></script>
+</body>
+</html>

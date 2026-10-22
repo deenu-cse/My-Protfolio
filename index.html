@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deendayal Verma | Full-Stack Developer (MERN)</title>
+<meta name="description" content="Deendayal Verma: full-stack developer from Haridwar. Built and deployed a live Government of Uttarakhand portal (sarra.uk.gov.in), YatriMap travel booking, and HackByteCodex, a student tech platform across 50+ colleges.">
+<meta name="theme-color" content="#0b0a09">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deendayal Verma | Full-Stack Developer">
+<meta property="og:description" content="From first commit to .gov.in. Next.js, Node.js, MongoDB, and the servers they run on.">
+<meta property="og:image" content="assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/marcellus-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/portrait.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/home.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Deendayal Verma","jobTitle":"Full-Stack Developer","email":"mailto:vdeendayal866@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Haridwar","addressRegion":"Uttarakhand","addressCountry":"IN"},"alumniOf":"Gurukul Kangri Vishwavidyalaya","sameAs":["https://github.com/deenu-cse","https://www.linkedin.com/in/deendayal-verma-1a8432290"]}
+</script>
+<script>document.documentElement.classList.add('js');if('scrollRestoration' in history)history.scrollRestoration='manual';</script>
+</head>
+<body class="is-intro">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================================================ LOADER -->
+<div class="loader" id="loader" aria-hidden="true">
+  <video class="loader__video" id="loaderVideo" muted playsinline preload="auto" disablepictureinpicture></video>
+  <div class="loader__name" id="loaderName">DEENDAYAL</div>
+  <div class="loader__ui">
+    <span class="loader__tl">Deendayal Verma<br>Portfolio / 2026</span>
+    <span class="loader__tr">Haridwar, IN<br><span id="loaderClock">--:--</span> IST</span>
+    <span class="loader__bl"><span class="loader__bar"><i id="loaderBar"></i></span><span>Loading <b id="loaderPct">000</b>%</span></span>
+    <button class="loader__skip" id="loaderSkip" type="button">Skip intro <span aria-hidden="true">→</span></button>
+  </div>
+  <div class="loader__wall" id="loaderWall"></div>
+</div>
+
+<!-- ============================================================ CHROME -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" aria-label="Deendayal Verma, back to top">
+    <span class="nav__mark">DV</span><span class="nav__word">Deendayal Verma</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#about"><i>01</i>About</a>
+    <a href="#journey"><i>02</i>Journey</a>
+    <a href="#work"><i>03</i>Work</a>
+    <a href="#stack"><i>04</i>Stack</a>
+    <a href="#contact"><i>05</i>Contact</a>
+  </nav>
+  <a class="nav__cta" href="assets/docs/Deendayal_Verma_Resume.pdf" target="_blank" rel="noopener" data-cursor="Open">Résumé <span aria-hidden="true">↗</span></a>
+  <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu__links" aria-label="Mobile">
+    <a href="#about"><i>01</i>About</a>
+    <a href="#journey"><i>02</i>Journey</a>
+    <a href="#work"><i>03</i>Work</a>
+    <a href="#stack"><i>04</i>Stack</a>
+    <a href="#contact"><i>05</i>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="mailto:vdeendayal866@gmail.com">vdeendayal866@gmail.com</a>
+    <div><a href="https://github.com/deenu-cse" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/deendayal-verma-1a8432290" target="_blank" rel="noopener">LinkedIn</a> · <a href="assets/docs/Deendayal_Verma_Resume.pdf" target="_blank" rel="noopener">Résumé</a></div>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main id="main">
+
+<!-- ============================================================ HERO -->
+<section class="hero" id="top">
+  <div class="hero__inner" id="heroInner">
+    <div class="hero__frame" id="heroFrame">
+      <picture>
+        <source srcset="assets/img/portrait.webp" type="image/webp">
+        <img id="heroImg" src="assets/img/portrait.jpg" width="1287" height="1222" fetchpriority="high" decoding="async" alt="Deendayal Verma in aviators and a black shirt, a monochrome portrait over a white brushstroke">
+      </picture>
+      <div class="hero__light" id="heroLight"></div>
+      <span class="hero__tick t1"></span><span class="hero__tick t2"></span><span class="hero__tick t3"></span><span class="hero__tick t4"></span>
+    </div>
+
+    <div class="hero__meta">
+      <span class="scramble" data-text="Portfolio — Vol. 2026">Portfolio — Vol. 2026</span>
+      <span class="scramble" data-text="B.Tech CSE ’27 · GKV Haridwar">B.Tech CSE ’27 · GKV Haridwar</span>
+      <span class="hero__clock">Haridwar · <b id="heroClock">--:--</b> IST</span>
+    </div>
+
+    <div class="hero__tagline">
+      <p class="hero__lead"><span class="line"><span>From first commit</span></span><span class="line"><span>to <em>.gov.in</em></span></span></p>
+      <p class="hero__sub">Full-stack developer (MERN). I design, build, secure and deploy web products, then keep them running.</p>
+      <a class="hero__status" href="#contact" data-cursor="Hire"><span class="dot-live"></span><span>Open to 2027 roles &amp; freelance</span><span class="hero__status-go" aria-hidden="true">→</span></a>
+    </div>
+
+    <ol class="hero__notes" id="heroNotes">
+      <li data-target="0.565,0.215"><a href="#work" data-cursor="View"><b>Live on .gov.in</b><span>Built &amp; deployed SARRA for the Govt. of Uttarakhand</span></a></li>
+      <li data-target="0.555,0.42"><a href="#proof" data-cursor="Proof"><b>Safe to Host</b><span>Cleared a CERT-In empanelled VAPT audit</span></a></li>
+      <li data-target="0.745,0.6"><a href="#work" data-cursor="View"><b>50+ colleges</b><span>Onboarded on HackByteCodex, my student tech platform</span></a></li>
+    </ol>
+    <svg class="hero__leaders" id="heroLeaders" aria-hidden="true"></svg>
+
+    <h1 class="hero__name" id="heroName">
+      <span class="sr-only">Deendayal Verma, full-stack developer</span>
+      <span class="hero__word" id="heroWord" aria-hidden="true"><span class="ltr">D</span><span class="ltr">E</span><span class="ltr">E</span><span class="ltr">N</span><span class="ltr">D</span><span class="ltr">A</span><span class="ltr">Y</span><span class="ltr">A</span><span class="ltr">L</span><span class="bl"></span><span class="hero__surname"><span>Verma · Full-stack developer</span></span></span>
+    </h1>
+
+    <a class="hero__badge" href="#about" aria-label="Scroll to explore" data-cursor="Scroll">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <defs><path id="badgeCircle" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+        <text textLength="462" lengthAdjust="spacing"><textPath href="#badgeCircle" textLength="462" lengthAdjust="spacing">SCROLL TO EXPLORE · FULL-STACK · MERN ·</textPath></text>
+      </svg>
+      <span class="hero__badge-arrow" aria-hidden="true">↓</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================ ABOUT -->
+<section class="about sheet" id="about">
+  <div class="container about__grid">
+    <div class="about__visual">
+      <div class="spot" id="spot" data-cursor="Look">
+        <div class="spot__bg" aria-hidden="true">HELLO</div>
+        <div class="spot__fig" id="spotFig">
+          <img src="assets/img/kit/p5_half.webp" alt="" draggable="false" loading="lazy" width="375" height="1100">
+          <img src="assets/img/kit/p5_sketch.webp" alt="Halftone and sketch print of Deendayal; move the pointer to see the real photo" draggable="false" loading="lazy" width="375" height="1100">
+          <img class="spot__real" id="spotReal" src="assets/img/kit/p5_cut.webp" alt="" draggable="false" loading="lazy" width="375" height="1100">
+        </div>
+        <div class="spot__ring" id="spotRing"></div>
+        <span class="spot__hint mono">Move your cursor: the print turns into the real me</span>
+      </div>
+    </div>
+    <div class="about__copy">
+      <p class="eyebrow"><i>01</i> About</p>
+      <h2 class="about__statement" id="aboutStatement">I’m Deendayal, a full-stack developer from Haridwar who doesn’t stop at localhost. I build the product, harden it, deploy it and keep it alive in production.</h2>
+      <div class="about__text">
+        <p>I’m in my final year of B.Tech CSE at Gurukul Kangri Vishwavidyalaya (CGPA 8.1). In the last two years I’ve delivered a live Government of Uttarakhand portal on my own, through a CERT-In empanelled security audit and onto government servers. Alongside that I did two internships, shipped freelance work for real clients and published an open-source npm package.</p>
+        <p>I care about the whole path a request takes: the Figma frame, the React component, the Express route, the MongoDB index, and the IIS rule and TLS certificate in front of them.</p>
+      </div>
+      <dl class="stats" id="stats">
+        <div><dt>Government portal live</dt><dd data-count="1">1</dd></div>
+        <div><dt>Internships</dt><dd data-count="2">2</dd></div>
+        <div><dt>Freelance projects</dt><dd data-count="4" data-suffix="+">4+</dd></div>
+        <div><dt>Colleges onboarded</dt><dd data-count="50" data-suffix="+">50+</dd></div>
+        <div><dt>Hotels on Smart QR</dt><dd data-count="15" data-suffix="+">15+</dd></div>
+        <div><dt>Peak weekly npm downloads</dt><dd data-count="196" data-suffix="+">196+</dd></div>
+      </dl>
+      <div class="about__cta">
+        <a class="btn btn--solid magnetic" href="assets/docs/Deendayal_Verma_Resume.pdf" target="_blank" rel="noopener" data-cursor="Open"><span>Download résumé</span><span aria-hidden="true">↓</span></a>
+        <a class="btn magnetic" href="#contact"><span>Let’s talk</span><span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ JOURNEY (git graph) -->
+<section class="journey ink" id="journey">
+  <div class="container journey__grid">
+    <div class="journey__side">
+      <div class="sec-head">
+        <p class="eyebrow eyebrow--ink"><i>02</i> Journey</p>
+        <h2 class="h-display split">Experience, read like a <span class="mono-inline">git log</span></h2>
+        <p class="sec-head__note">Branches are internships and projects running in parallel. Merges are things that shipped. Scroll and the history draws itself.</p>
+      </div>
+      <div class="year" aria-hidden="true"><span class="year__num" id="yearNum">2023</span></div>
+      <p class="year__label" id="yearLabel" aria-hidden="true">main · <b>1</b> branch</p>
+    </div>
+    <div class="journey__main">
+    <div class="term-line mono" aria-hidden="true"><span class="pr">$</span> git log --graph --reverse --author="Deendayal"</div>
+
+    <div class="graph" id="graph">
+      <svg class="graph__svg" id="graphSvg" aria-hidden="true"></svg>
+      <ol class="graph__list">
+        <li class="commit" data-row="0" data-lane="0" data-kind="init">
+          <div class="commit__head"><code class="commit__hash">a1f3c09</code><span class="commit__ref ref--main">main</span><time>Aug 2023</time></div>
+          <h3>Started B.Tech in Computer Science &amp; Engineering</h3>
+          <p>Gurukul Kangri Vishwavidyalaya, Haridwar. CGPA 8.1 / 10, graduating 2027.</p>
+          <ul class="tags"><li>DSA</li><li>DBMS</li><li>OOP</li><li>C / C++</li></ul>
+        </li>
+        <li class="commit" data-row="1" data-lane="3" data-kind="commit">
+          <div class="commit__head"><code class="commit__hash">4be81d2</code><span class="commit__ref ref--oss">oss/custom-db-cli</span><time>Oct 2024</time></div>
+          <h3>Published <a href="https://www.npmjs.com/package/custom-db-cli" target="_blank" rel="noopener">custom-db-cli</a> to npm</h3>
+          <p>A CLI and Express API that gives beginners CRUD over a JSON store, plus a one-command migration to MongoDB. Peaked at 196+ weekly downloads.</p>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>CLI</li><li>MongoDB</li></ul>
+        </li>
+        <li class="commit" data-row="2" data-lane="1" data-kind="commit">
+          <div class="commit__head"><code class="commit__hash">7c2e9f0</code><span class="commit__ref ref--yatri">internship/yatrimap</span><time>Feb 2025 – Jun 2026</time></div>
+          <h3>Full Stack Web Developer Intern · <span class="hl-green">Yatrimap</span> (startup)</h3>
+          <ul class="commit__bullets">
+            <li>Built the Yatrimap Smart QR system, now at 15+ hotels: QR guest check-in, document upload and digital hotel onboarding.</li>
+            <li>Developed yatrimap.com and 3 admin dashboards (hotel, rental, Chardham) with real-time room availability, revenue analytics and secure REST APIs.</li>
+          </ul>
+          <ul class="tags"><li>Next.js</li><li>Node.js</li><li>MongoDB</li><li>Razorpay</li></ul>
+        </li>
+        <li class="commit" data-row="3" data-lane="2" data-kind="commit">
+          <div class="commit__head"><code class="commit__hash">e05a6b1</code><span class="commit__ref ref--spt">internship/social-purpose-trust</span><time>Feb 2025 – Nov 2025</time></div>
+          <h3>Full Stack Web Development Intern · <span class="hl-red">The Social Purpose Trust</span></h3>
+          <ul class="commit__bullets">
+            <li>Built <a href="https://suryasangam.com" target="_blank" rel="noopener">suryasangam.com</a> from Figma designs with Next.js, Tailwind, Express and MongoDB, with JWT and Google OAuth, and shipped it to production.</li>
+            <li>Optimised MongoDB queries and REST API response times; implemented RBAC and secure session management.</li>
+          </ul>
+          <ul class="tags"><li>Next.js</li><li>Express</li><li>JWT</li><li>RBAC</li></ul>
+        </li>
+        <li class="commit commit--merge" data-row="4" data-lane="0" data-kind="merge">
+          <div class="commit__head"><code class="commit__hash">91d0c3a</code><span class="commit__ref ref--main">merge</span><time>Nov 2025</time></div>
+          <h3>Merged internship/social-purpose-trust</h3>
+          <p>Internship complete. <a href="https://res.cloudinary.com/dmqe0e8k0/image/upload/v1784956375/Deendayal-Internship-certificate_surya-sangam_ddx6e0.pdf" target="_blank" rel="noopener" data-cursor="Open">View certificate ↗</a></p>
+        </li>
+        <li class="commit" data-row="5" data-lane="2" data-kind="commit">
+          <div class="commit__head"><code class="commit__hash">3f7b2e8</code><span class="commit__ref ref--hbc">hackbytecodex</span><time>Feb 2026 – now</time></div>
+          <h3>“Not here to push small commits… Built the platform. Shipping the vision.”</h3>
+          <p>That was the real first commit of <span class="hl-amber">HackByteCodex</span>: a public site, a dashboard and one API, with 50+ colleges onboarded and active college leads at 3 institutions.</p>
+          <ul class="tags"><li>Next.js 16</li><li>Express</li><li>MongoDB</li><li>Cloudinary</li></ul>
+        </li>
+        <li class="commit commit--tag" data-row="6" data-lane="0" data-kind="tag">
+          <div class="commit__head"><code class="commit__hash">c4a9e17</code><span class="commit__ref ref--tag">tag: v1.0-safe-to-host</span><time>2026</time></div>
+          <h3><span class="hl-blue">SARRA</span> goes live on sarra.uk.gov.in</h3>
+          <ul class="commit__bullets">
+            <li>Built and deployed the Government of Uttarakhand’s Spring &amp; River Rejuvenation Authority portal on my own.</li>
+            <li>Led remediation for a CERT-In empanelled VAPT audit and got it certified “Safe to Host”.</li>
+            <li>Set up the ITDA Windows Server myself: IIS reverse proxy, SSL/CSP hardening, PM2 and the firewall. Migrated MongoDB from the cloud to on-prem with zero data loss.</li>
+          </ul>
+        </li>
+        <li class="commit commit--merge" data-row="7" data-lane="0" data-kind="merge">
+          <div class="commit__head"><code class="commit__hash">5e6f0d4</code><span class="commit__ref ref--main">merge</span><time>Jun 2026</time></div>
+          <h3>Merged internship/yatrimap</h3>
+          <p>16 months, from first QR scan to real travellers booking every day.</p>
+        </li>
+        <li class="commit commit--head" data-row="8" data-lane="0" data-kind="head">
+          <div class="commit__head"><code class="commit__hash">HEAD</code><span class="commit__ref ref--head">HEAD → main</span><time>2027</time></div>
+          <h3>Graduating, and open to full-time roles</h3>
+          <p>Looking for a team that ships to real users. <a href="#contact">Let’s talk →</a></p>
+        </li>
+      </ol>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ WORK -->
+<section class="work" id="work">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow"><i>03</i> Selected work</p>
+      <h2 class="h-display split">Three products. Real users.<br>All in production.</h2>
+      <p class="sec-head__note">Each one is a live system, not a mock-up. Play with the scenes: tap the tabs, hover the map, replay the audit.</p>
+    </div>
+  </div>
+
+  <div class="cases container" id="cases">
+    <!-- ---------- SARRA ---------- -->
+    <article class="case" style="--accent:var(--river)" id="case-sarra">
+      <div class="case__bar">
+        <span class="mono">No. 01 · Government of Uttarakhand · 2026</span>
+        <a class="pill-live" href="https://sarra.uk.gov.in" target="_blank" rel="noopener" data-cursor="Visit"><i></i>sarra.uk.gov.in</a>
+      </div>
+      <div class="case__grid">
+        <div class="case__info">
+          <h3 class="case__title case__title--river">SARRA</h3>
+          <p class="case__sub">Spring &amp; River Rejuvenation Authority web portal</p>
+          <p class="case__text">I built the portal on my own and took it all the way to production: the app, the security audit, the government server and the database move.</p>
+          <ul class="facts">
+            <li class="is-red"><b>Safe to Host</b><span>CERT-In VAPT</span></li>
+            <li class="is-accent"><b>0 data lost</b><span>cloud → on-prem</span></li>
+            <li><b>.gov.in</b><span>ITDA servers</span></li>
+            <li><b>16 routes</b><span>SSR + SEO</span></li>
+          </ul>
+          <ul class="tags tags--ink"><li>Next.js</li><li>Express</li><li>MongoDB</li><li>IIS</li><li>PM2</li><li>CSP</li></ul>
+          <div class="case__cta">
+            <a class="btn btn--solid magnetic" href="work/sarra.html" data-transition data-cursor="Read"><span>Read case study</span><span aria-hidden="true">→</span></a>
+            <a class="btn magnetic" href="https://sarra.uk.gov.in" target="_blank" rel="noopener"><span>Visit live</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="case__stage">
+          <div class="tabs" role="tablist" aria-label="SARRA scenes">
+            <button role="tab" aria-selected="true" data-scene="sarra-map">Rivers</button>
+            <button role="tab" aria-selected="false" data-scene="sarra-audit">Audit</button>
+            <button role="tab" aria-selected="false" data-scene="sarra-mig">Migration</button>
+            <button class="tabs__replay" type="button" aria-label="Replay scene" data-replay>↻</button>
+          </div>
+          <div class="stage">
+            <div class="scene is-on" data-scene-id="sarra-map">
+              <svg id="sMap" role="img" aria-label="Map of Uttarakhand’s 13 districts, with rivers flowing out from their springs"></svg>
+              <div class="tip" id="sTip"></div>
+              <span class="scene__cap mono">13 districts · hover a district</span>
+            </div>
+            <div class="scene" data-scene-id="sarra-audit">
+              <div class="audit">
+                <div class="term"><div class="term__bar"><i></i><i></i><i></i></div><div id="sTerm"></div></div>
+                <div class="audit__stamp"><svg id="sStamp" viewBox="-180 -180 360 360" role="img" aria-label="Safe to Host stamp"></svg></div>
+              </div>
+            </div>
+            <div class="scene" data-wide data-scene-id="sarra-mig">
+              <svg id="sMig" role="img" aria-label="The cartoon pushes the MongoDB database from the cloud into a government server. Data lost: 0"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- YATRIMAP ---------- -->
+    <article class="case" style="--accent:var(--green)" id="case-yatri">
+      <div class="case__bar">
+        <span class="mono">No. 02 · Travel-tech startup · 2025 – 26</span>
+        <a class="pill-live" href="https://yatrimap.com" target="_blank" rel="noopener" data-cursor="Visit"><i></i>yatrimap.com</a>
+      </div>
+      <div class="case__grid">
+        <div class="case__info">
+          <h3 class="case__title">YATRI<span class="c-green">MAP</span></h3>
+          <p class="case__sub">Travel booking for the Himalayas, built end to end</p>
+          <p class="case__text">Hotels, vehicle rentals and adventure activities in Uttarakhand, plus TouristGo, where hotels, cafés and shops sell trips through a QR code. I built the customer site, the Smart QR system, the admin dashboards and the REST APIs behind them.</p>
+          <ul class="facts" id="yFacts">
+            <li><b data-k="bookings">270</b><span>real bookings</span></li>
+            <li><b data-k="guests">620+</b><span>guests served</span></li>
+            <li class="is-red"><b data-k="rating">4.6★</b><span data-k="reviews">31 verified reviews</span></li>
+            <li class="is-accent"><b>15+</b><span>hotels on Smart QR</span></li>
+          </ul>
+          <ul class="tags tags--ink"><li>Next.js</li><li>Node.js</li><li>MongoDB</li><li>Razorpay</li><li>Twilio</li><li>Redux</li></ul>
+          <div class="case__cta">
+            <a class="btn btn--solid magnetic" href="work/yatrimap.html" data-transition data-cursor="Read"><span>Read case study</span><span aria-hidden="true">→</span></a>
+            <button class="btn magnetic" type="button" data-reel data-cursor="Play"><span>Watch the reel</span><span aria-hidden="true">▶</span></button>
+          </div>
+        </div>
+        <div class="case__stage">
+          <div class="tabs" role="tablist" aria-label="YatriMap scenes">
+            <button role="tab" aria-selected="true" data-scene="y-bungee">Bungee</button>
+            <button role="tab" aria-selected="false" data-scene="y-raft">Raft pool</button>
+            <button role="tab" aria-selected="false" data-scene="y-pay">Payments</button>
+            <button class="tabs__replay" type="button" aria-label="Replay scene" data-replay>↻</button>
+          </div>
+          <div class="stage">
+            <div class="scene is-on" data-scene-id="y-bungee" data-cursor="Jump">
+              <svg id="yBungee" role="img" aria-label="Cartoon Deendayal bungee jumps from a bridge; Bungee is the most booked activity"></svg>
+              <span class="scene__cap mono">Bungee · the most booked activity · tap to jump</span>
+            </div>
+            <div class="scene" data-wide data-scene-id="y-raft">
+              <svg id="yRaft" role="img" aria-label="Company A needs 4 seats; B and C claim at the same moment; only B’s atomic claim wins"></svg>
+            </div>
+            <div class="scene" data-wide data-scene-id="y-pay">
+              <svg id="yPay" role="img" aria-label="One cart payment is verified by the server and split into three bookings; a tampered payment bounces"></svg>
+            </div>
+          </div>
+          <div class="phone-reel" aria-hidden="true">
+            <video src="assets/video/yatrimap-reel.mp4" muted loop playsinline preload="none" data-autoplay></video>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- HACKBYTECODEX ---------- -->
+    <article class="case" style="--accent:var(--amber)" id="case-hbc">
+      <div class="case__bar">
+        <span class="mono">No. 03 · Student tech platform · 2026</span>
+        <a class="pill-live" href="https://gkv.hackbytecodex.com" target="_blank" rel="noopener" data-cursor="Visit"><i></i>gkv.hackbytecodex.com</a>
+      </div>
+      <div class="case__grid">
+        <div class="case__info">
+          <h3 class="case__title case__title--sm">HACKBYTE<span class="c-amber">CODEX</span></h3>
+          <p class="case__sub">One platform for every college tech event</p>
+          <p class="case__text">College events used to run on WhatsApp groups and scattered Google Forms. I built a multi-college network (public site, dashboard and API) with a 4-tier role hierarchy, geofenced QR attendance, judge scoring, live leaderboards and reward tiers.</p>
+          <ul class="facts">
+            <li class="is-accent"><b>50+</b><span>colleges</span></li>
+            <li><b>125</b><span>API endpoints</span></li>
+            <li><b>3 apps</b><span>one API</span></li>
+            <li class="is-red"><b>500 m</b><span>QR geofence</span></li>
+          </ul>
+          <ul class="tags tags--ink"><li>Next.js 16</li><li>React 19</li><li>Express</li><li>MongoDB</li><li>JWT</li><li>Razorpay</li></ul>
+          <div class="case__cta">
+            <a class="btn btn--solid magnetic" href="work/hackbytecodex.html" data-transition data-cursor="Read"><span>Read case study</span><span aria-hidden="true">→</span></a>
+            <a class="btn magnetic" href="https://github.com/deenu-cse/hackbytecodex" target="_blank" rel="noopener"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="case__stage">
+          <div class="tabs" role="tablist" aria-label="HackByteCodex scenes">
+            <button role="tab" aria-selected="true" data-scene="h-tree">Lifecycle</button>
+            <button role="tab" aria-selected="false" data-scene="h-geo">QR attendance</button>
+            <button role="tab" aria-selected="false" data-scene="h-board">Leaderboard</button>
+            <button class="tabs__replay" type="button" aria-label="Replay scene" data-replay>↻</button>
+          </div>
+          <div class="stage">
+            <div class="scene is-on" data-wide data-scene-id="h-tree">
+              <svg id="hTree" role="img" aria-label="Super Admin, colleges, clubs and students; an event is created, students register, attend, get judged and earn reward points"></svg>
+            </div>
+            <div class="scene" data-wide data-scene-id="h-geo">
+              <svg id="hGeo" role="img" aria-label="A rotating QR expires every 30 seconds; students inside the 500 metre venue radius are marked present, one outside is rejected"></svg>
+            </div>
+            <div class="scene" data-wide data-scene-id="h-board">
+              <svg id="hBoard" role="img" aria-label="Judges’ scores arrive, teams reorder on the leaderboard, and scores lock"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================ MORE BUILDS -->
+<section class="builds ink" id="builds">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow eyebrow--ink"><i>04</i> More builds</p>
+      <h2 class="h-display split">Side projects that people actually used</h2>
+    </div>
+    <div class="builds__grid">
+      <article class="cli" id="cli">
+        <div class="cli__head">
+          <div>
+            <p class="mono c-red">Open source · npm</p>
+            <h3 class="cli__title">custom-db-cli</h3>
+            <p class="cli__text">A database for people who haven’t learned backends yet. CRUD from the terminal or over HTTP, JSON storage, and one command to migrate it all to MongoDB.</p>
+          </div>
+          <div class="cli__stat"><b data-count="196" data-suffix="+">196+</b><span>peak weekly downloads</span></div>
+        </div>
+        <div class="cli__term" data-cursor="Run">
+          <div class="term__bar"><i></i><i></i><i></i><span>~/my-project · commands from the README, output simulated</span></div>
+          <pre class="cli__out" id="cliOut" aria-live="polite"></pre>
+        </div>
+        <div class="cli__cmds" role="group" aria-label="Run a command">
+          <button type="button" data-cmd="install">npm i -g</button>
+          <button type="button" data-cmd="create">create</button>
+          <button type="button" data-cmd="read">read</button>
+          <button type="button" data-cmd="update">update</button>
+          <button type="button" data-cmd="migrate">migrateMongo</button>
+        </div>
+        <div class="cli__links">
+          <a href="https://www.npmjs.com/package/custom-db-cli" target="_blank" rel="noopener">npm ↗</a>
+          <a href="https://github.com/deenu-cse/npmPackage" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="pcard tilt">
+        <a class="pcard__shot" href="https://medimeal.vercel.app/" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="browser"><i></i><i></i><i></i><em>medimeal.vercel.app</em></span>
+          <img src="assets/img/shots/medi.webp" alt="MediMeal home page: streamlined hospital food management" loading="lazy" width="1280" height="800">
+        </a>
+        <div class="pcard__body">
+          <p class="mono c-red">MERN · Healthcare</p>
+          <h3>MediMeal</h3>
+          <p>Hospital food management: patient records, dietary customisation, real-time delivery tracking and a personalised food dashboard.</p>
+          <div class="pcard__links"><a href="https://medimeal.vercel.app/" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/deenu-cse/frontend-hileverse" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </article>
+
+      <article class="pcard tilt">
+        <a class="pcard__shot" href="https://trisco.vercel.app/" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="browser"><i></i><i></i><i></i><em>trisco.vercel.app</em></span>
+          <img src="assets/img/shots/trisco.webp" alt="Trisco event page for G.P.L. GKV 2025" loading="lazy" width="1280" height="800">
+        </a>
+        <div class="pcard__body">
+          <p class="mono c-red">Events · Payments</p>
+          <h3>Trisco</h3>
+          <p>College event management with dynamic registration, Razorpay payments, real-time email notifications and a role-based admin dashboard.</p>
+          <div class="pcard__links"><a href="https://trisco.vercel.app/" target="_blank" rel="noopener">Live ↗</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CLIENT WORK -->
+<section class="clients" id="clients">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow"><i>05</i> Client work</p>
+      <h2 class="h-display split">Shipped for real clients</h2>
+    </div>
+    <ul class="clist" id="clist">
+      <li class="crow" data-img="assets/img/shots/surya.webp">
+        <a href="https://suryasangam.com" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="crow__no mono">01</span>
+          <span class="crow__name">SuryaSangam</span>
+          <span class="crow__desc">Solar platform for homes &amp; MSMEs, built from Figma · via The Social Purpose Trust</span>
+          <span class="crow__role mono">Full-stack</span>
+          <span class="crow__go" aria-hidden="true">↗</span>
+        </a>
+        <img class="crow__thumb" src="assets/img/shots/surya.webp" alt="" loading="lazy" width="1280" height="800">
+      </li>
+      <li class="crow" data-img="assets/img/shots/naresh.webp">
+        <a href="https://drnaresh.in/" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="crow__no mono">02</span>
+          <span class="crow__name">Dr. Naresh K. Chaudhary</span>
+          <span class="crow__desc">Portfolio for a humanitarian honoured by Dr A.P.J. Abdul Kalam (2007) and the PM (2022): 38+ years of service, 50+ relief operations, 25+ national awards</span>
+          <span class="crow__role mono">Frontend</span>
+          <span class="crow__go" aria-hidden="true">↗</span>
+        </a>
+        <img class="crow__thumb" src="assets/img/shots/naresh.webp" alt="" loading="lazy" width="1280" height="800">
+      </li>
+      <li class="crow" data-img="assets/img/shots/vedic.webp">
+        <a href="https://www.thevedicpedia.com" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="crow__no mono">03</span>
+          <span class="crow__name">VedicPedia</span>
+          <span class="crow__desc">The Vedas and their mantras to listen to, read and explore in English and Hindi, with integrated audio</span>
+          <span class="crow__role mono">Frontend</span>
+          <span class="crow__go" aria-hidden="true">↗</span>
+        </a>
+        <img class="crow__thumb" src="assets/img/shots/vedic.webp" alt="" loading="lazy" width="1280" height="800">
+      </li>
+      <li class="crow" data-poster="lux">
+        <div class="crow__static">
+          <span class="crow__no mono">04</span>
+          <span class="crow__name">LuggageLux</span>
+          <span class="crow__desc">E-commerce with Redux Toolkit, Google &amp; JWT auth, Razorpay, an affiliate &amp; coupon system and an admin dashboard</span>
+          <span class="crow__role mono">Full-stack</span>
+          <span class="crow__go crow__go--off mono" aria-label="Delivered; site no longer online">Delivered</span>
+        </div>
+        <div class="crow__thumb crow__poster crow__poster--lux" aria-hidden="true"><b>LUGGAGE<br>LUX</b><span>RAZORPAY · COUPONS · AFFILIATES</span></div>
+      </li>
+    </ul>
+  </div>
+  <div class="cfloat" id="cfloat" aria-hidden="true"><div class="cfloat__inner" id="cfloatInner"></div></div>
+</section>
+
+<!-- ============================================================ STACK -->
+<section class="stack sheet-2" id="stack">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow"><i>06</i> Stack</p>
+      <h2 class="h-display split">The toolkit, walked through</h2>
+      <p class="sec-head__note">Scroll and I walk across the stack. Hover any skill (or tap it on a phone) to light up the projects where I actually used it.</p>
+    </div>
+    <div class="walker" id="walker">
+      <div class="walker__pct" id="walkerPct">0%</div>
+      <div class="walker__ground"></div>
+      <svg class="walker__svg" id="walkerSvg" viewBox="0 0 800 330" preserveAspectRatio="xMinYMax meet"><g id="walkerG"></g></svg>
+      <div class="walker__tags" id="walkerTags"></div>
+    </div>
+
+    <div class="matrix">
+      <div class="matrix__groups" id="matrix"></div>
+      <aside class="matrix__used" aria-live="polite">
+        <p class="mono">Where I’ve used <b id="usedSkill">it</b></p>
+        <ul id="usedList"></ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PROOF -->
+<section class="proof" id="proof">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow"><i>07</i> Proof</p>
+      <h2 class="h-display split">Certified, not just claimed</h2>
+    </div>
+    <div class="proof__grid">
+      <a class="proof__card proof__card--stamp" href="https://res.cloudinary.com/dmqe0e8k0/image/upload/v1784955737/Security_Audit_VAPT_Clearance_Certificate_CNPL26-27010726232_g5gwky.pdf" target="_blank" rel="noopener" data-cursor="Open">
+        <svg id="proofStamp" viewBox="-180 -180 360 360" role="img" aria-label="Safe to Host stamp"></svg>
+        <div>
+          <p class="mono c-river">Security · CERT-In empanelled VAPT</p>
+          <h3>“Safe to Host” clearance for sarra.uk.gov.in</h3>
+          <p>Codec Networks Pvt. Ltd. audited the portal. I led every fix until it passed the re-test.</p>
+          <span class="link-arrow">View certificate ↗</span>
+        </div>
+      </a>
+      <a class="proof__card proof__card--cert" href="https://res.cloudinary.com/dmqe0e8k0/image/upload/v1784956375/Deendayal-Internship-certificate_surya-sangam_ddx6e0.pdf" target="_blank" rel="noopener" data-cursor="Open">
+        <div class="proof__paper"><img src="assets/img/cert-internship.webp" alt="Internship certificate from The Social Purpose Trust" loading="lazy" width="707" height="1000"></div>
+        <div>
+          <p class="mono c-red">Internship · Feb – Nov 2025</p>
+          <h3>Full Stack Web Development, The Social Purpose Trust</h3>
+          <span class="link-arrow">View certificate ↗</span>
+        </div>
+      </a>
+      <div class="proof__card proof__card--edu">
+        <div class="ring" id="cgpaRing" role="img" aria-label="CGPA 8.1 out of 10">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" class="ring__bg"/><circle cx="60" cy="60" r="52" class="ring__fg" id="cgpaArc"/></svg>
+          <div class="ring__val"><b id="cgpaVal">8.1</b><span>/ 10</span></div>
+        </div>
+        <div>
+          <p class="mono">Education · 2023 – 2027</p>
+          <h3>B.Tech, Computer Science &amp; Engineering</h3>
+          <p>Gurukul Kangri Vishwavidyalaya, Haridwar, Uttarakhand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CONTACT -->
+<section class="contact ink" id="contact">
+  <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Available for 2027 roles ✦ Freelance builds ✦ Full-stack ✦ Haridwar → anywhere ✦&nbsp;</span><span>Available for 2027 roles ✦ Freelance builds ✦ Full-stack ✦ Haridwar → anywhere ✦&nbsp;</span></div></div>
+  <div class="container contact__grid">
+    <div class="contact__copy">
+      <p class="eyebrow eyebrow--ink"><i>08</i> Contact</p>
+      <h2 class="contact__title split">Let’s build something that <em>goes live.</em></h2>
+      <p class="contact__text">Hiring for a full-stack role, or need a product taken from Figma to production? I reply within a day.</p>
+      <div class="contact__actions">
+        <button class="mailbtn magnetic" id="mailBtn" type="button" data-cursor="Copy" data-email="vdeendayal866@gmail.com">
+          <span class="mailbtn__text">vdeendayal866@gmail.com</span>
+          <span class="mailbtn__state" id="mailState">Copy</span>
+        </button>
+        <a class="btn btn--light magnetic" href="mailto:vdeendayal866@gmail.com?subject=Hello%20Deendayal"><span>Write an email</span><span aria-hidden="true">→</span></a>
+      </div>
+      <ul class="socials">
+        <li><a href="https://github.com/deenu-cse" target="_blank" rel="noopener" data-cursor="Open"><span>GitHub</span><em>deenu-cse</em></a></li>
+        <li><a href="https://www.linkedin.com/in/deendayal-verma-1a8432290" target="_blank" rel="noopener" data-cursor="Open"><span>LinkedIn</span><em>deendayal-verma</em></a></li>
+        <li><a href="assets/docs/Deendayal_Verma_Resume.pdf" target="_blank" rel="noopener" data-cursor="Open"><span>Résumé</span><em>PDF · 1 page</em></a></li>
+      </ul>
+    </div>
+    <div class="buddy" id="buddy" tabindex="0" role="button" aria-label="Cartoon of Deendayal. Press Enter to toggle his sunglasses." data-cursor="Click">
+      <svg viewBox="190 20 420 420" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><g id="buddyG"></g></svg>
+      <span class="buddy__hint mono">He follows your cursor. Click him.</span>
+    </div>
+  </div>
+  <footer class="foot container">
+    <span class="mono">© 2026 Deendayal Verma · Designed &amp; built by me, from Haridwar</span>
+    <a class="mono" href="#top" data-cursor="Top">Back to top ↑</a>
+  </footer>
+</section>
+</main>
+
+<!-- reel modal -->
+<div class="modal" id="reelModal" role="dialog" aria-modal="true" aria-label="YatriMap case study reel" hidden>
+  <button class="modal__close" type="button" aria-label="Close reel">×</button>
+  <video controls playsinline preload="none" src="assets/video/yatrimap-reel.mp4"></video>
+</div>
+
+<div class="wipe" id="wipe" aria-hidden="true"><span>Opening case study</span></div>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/SplitText.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/lib/uk-map-data.js" defer></script>
+<script src="assets/js/lib/toon.js" defer></script>
+<script src="assets/js/lib/sarra.js" defer></script>
+<script src="assets/js/lib/yatri.js" defer></script>
+<script src="assets/js/lib/hbc.js" defer></script>
+<script src="assets/js/kit.js" defer></script>
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/home.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HackByteCodex Case Study | Deendayal Verma</title>
+<meta name="description" content="HackByteCodex: a multi-college tech network with a 4-tier role hierarchy, geofenced QR attendance, judge scoring with locked results, reward tiers and an events API platform. 50+ colleges onboarded.">
+<meta name="theme-color" content="#f4f0e8">
+<meta property="og:title" content="HackByteCodex: one platform for every college tech event">
+<meta property="og:image" content="../assets/img/shots/hbc.webp">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/case.css">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  .code{background:#141312;color:#f1ece4;border-radius:16px;padding:18px 20px;font:13.5px/1.75 var(--f-mono);overflow-x:auto;white-space:pre;margin:0}
+  .code .c{color:#8a837b}.code .k{color:#ff6b7c}.code .s{color:#e5b45a}.code .f{color:#7fb3ff}.code .n{color:#3fc488}
+  .split2{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:16px;align-items:start}
+  @media (max-width:900px){.split2{grid-template-columns:1fr}}
+  .ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+  .rung{border:1.5px solid var(--ink);border-radius:16px;padding:16px;background:var(--stage);position:relative;overflow:hidden}
+  .rung b{display:block;font:400 30px/1 var(--f-poster);margin-top:30px;position:relative;z-index:1}
+  .rung span{font:700 10.5px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);position:relative;z-index:1}
+  .rung::before{content:"";position:absolute;left:0;right:0;bottom:0;height:var(--h);background:var(--c);opacity:.9;transform:scaleY(0);transform-origin:bottom;transition:transform 1.2s var(--ease)}
+  .ladder.is-in .rung::before{transform:scaleY(1)}
+  .ladder.is-in .rung:nth-child(2)::before{transition-delay:.15s}.ladder.is-in .rung:nth-child(3)::before{transition-delay:.3s}.ladder.is-in .rung:nth-child(4)::before{transition-delay:.45s}
+  @media (max-width:700px){.ladder{grid-template-columns:1fr 1fr}}
+  .pain{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+  .pain div{border:1.5px dashed var(--ink);border-radius:14px;padding:14px 16px;color:var(--muted);font-size:15px;position:relative}
+  .pain div b{display:block;color:var(--ink);font:400 20px/1.2 var(--f-display);margin-bottom:4px;text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px}
+  .nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1.5px solid var(--ink);border-radius:16px;overflow:hidden;background:var(--stage)}
+  .nums div{padding:18px;border-right:1.5px solid var(--ink)}
+  .nums div:last-child{border-right:0}
+  .nums b{display:block;font:400 clamp(40px,5vw,64px)/1 var(--f-poster)}
+  .nums span{font:700 10.5px/1.4 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  @media (max-width:760px){.nums{grid-template-columns:1fr 1fr}.nums div:nth-child(2){border-right:0}.nums div:nth-child(-n+2){border-bottom:1.5px solid var(--ink)}}
+  .apps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  .app{border:1.5px solid var(--ink);border-radius:16px;padding:18px;background:var(--stage)}
+  .app h3{font:400 26px/1.1 var(--f-poster);margin:6px 0 8px;letter-spacing:.01em}
+  .app p{color:var(--muted);font-size:14.5px;margin:0 0 10px}
+  .app .k{font:700 11px var(--f-mono);letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+  @media (max-width:900px){.apps{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="case-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <a class="nav__back" href="../index.html#work" data-transition data-label="Back to work"><span aria-hidden="true">←</span>All work</a>
+  <span class="nav__crumb">Case study 03 · HackByteCodex</span>
+  <a class="nav__cta" href="../assets/docs/Deendayal_Verma_Resume.pdf" target="_blank" rel="noopener" data-cursor="Open">Résumé ↗</a>
+</header>
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="cs" id="main" style="--accent:var(--amber)">
+<div class="wrap">
+  <div class="cs-top">
+    <span class="mono">Projects / Case study 03 · Feb 2026 – now</span>
+    <div class="cs-links">
+      <a class="cs-btn" href="https://gkv.hackbytecodex.com" target="_blank" rel="noopener" data-cursor="Visit"><i class="live"></i>gkv.hackbytecodex.com</a>
+      <a class="cs-btn" href="https://github.com/deenu-cse/hackbytecodex" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+
+  <section class="cs-hero">
+    <div>
+      <div class="cs-eyebrow">Creator &amp; sole engineer · student tech platform</div>
+      <h1>HACKBYTE<br><span>CODEX</span></h1>
+      <div class="cs-sub">One platform for every college tech event</div>
+      <p>A multi-college network for hackathons and tech events: discover, register, attend, get judged, earn rewards. I designed and built all three apps (public site, dashboard and API) from the first commit.</p>
+      <div class="cs-facts">
+        <div class="cs-fact a"><b>50+</b><span>colleges onboarded</span></div>
+        <div class="cs-fact"><b>3 campuses</b><span>with active college leads</span></div>
+        <div class="cs-fact"><b>125</b><span>REST endpoints</span></div>
+        <div class="cs-fact r"><b>58 / 58</b><span>commits are mine</span></div>
+      </div>
+    </div>
+    <div class="shot-wrap rv"><a class="shot" href="https://gkv.hackbytecodex.com" target="_blank" rel="noopener" data-cursor="Visit" style="display:block">
+      <span class="browser"><i></i><i></i><i></i><em>gkv.hackbytecodex.com</em></span>
+      <img src="../assets/img/shots/hbc.webp" alt="HackByteCodex home page: What will you build together?" width="1280" height="800">
+    </a></div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">01 — The problem</div>
+      <h2>College events ran on WhatsApp chaos</h2>
+      <p>Every club re-invented the same broken process, and no student had a record of anything they’d done.</p>
+    </div>
+    <div class="pain">
+      <div class="rv"><b>WhatsApp groups</b>Announcements lost in a hundred chats</div>
+      <div class="rv"><b>Google Forms</b>Registrations scattered across links</div>
+      <div class="rv"><b>Paper attendance</b>Proxy sign-ins, no proof anyone came</div>
+      <div class="rv"><b>Spreadsheet judging</b>Scores edited after the fact</div>
+      <div class="rv"><b>No visibility</b>No track record, no cross-college reach</div>
+    </div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec">
+      <div class="no">02 — Hierarchy &amp; lifecycle</div>
+      <h2>Super Admin → College → Club → Student, and every event runs through it</h2>
+      <p>Each role gets exactly the permissions it needs. An event goes from create to reward without leaving the platform.</p>
+    </div>
+    <div class="roles">
+      <div class="role rv"><span class="lvl">L1</span><b>Super Admin</b><p>Approves colleges, sees every user, runs global events and rewards.</p></div>
+      <div class="role rv"><span class="lvl">L2</span><b>College Lead</b><p>Owns a chapter: clubs, events, attendance QR, registrations.</p></div>
+      <div class="role rv"><span class="lvl">L3</span><b>Club Admin</b><p>Creates events, builds registration forms, invites judges.</p></div>
+      <div class="role rv"><span class="lvl">L4</span><b>Student</b><p>Registers, checks in by QR, submits projects, earns points.</p></div>
+    </div>
+    <div class="stage svgstage" id="treeStage" style="margin-top:16px"><svg id="treeSvg" role="img" aria-label="Super Admin, colleges, clubs and students; an event is created, students register, attend, get judged and earn reward points"></svg></div>
+    <div class="cs-cap"><span class="mono">Create → Register → Attend → Judge → Reward · loops</span><button class="cs-btn" data-replay-for="treeStage" type="button">Replay ↻</button></div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec">
+      <div class="no">03 — Attendance that can’t be faked</div>
+      <h2>A signed QR that dies in 30 seconds, plus a 500 m geofence</h2>
+      <p>The event screen shows a JWT that expires every 30 seconds, so a screenshot sent to a friend is useless. When a student scans, the server also checks their GPS position against the venue with the haversine formula.</p>
+    </div>
+    <div class="stage svgstage" id="geoStage"><svg id="geoSvg" role="img" aria-label="A rotating QR expires every 30 seconds; students inside the 500 metre venue radius are marked present, one outside and one with an old screenshot are rejected"></svg></div>
+    <div class="split2" style="margin-top:16px">
+<pre class="code rv" aria-label="Simplified attendance check from the backend"><span class="c">// POST /qr/attendance (simplified from the real controller)</span>
+<span class="k">const</span> { token, lat, lng } = req.body;
+<span class="k">const</span> { eventId } = jwt.<span class="f">verify</span>(token, process.env.QR_SECRET); <span class="c">// signed with expiresIn: "30s"</span>
+<span class="k">const</span> event = <span class="k">await</span> Event.<span class="f">findById</span>(eventId);
+<span class="k">const</span> [vLng, vLat] = event.location.coordinates;
+<span class="k">const</span> distance = <span class="f">getDistanceInMeters</span>(lat, lng, vLat, vLng); <span class="c">// haversine</span>
+<span class="k">if</span> (distance > <span class="n">500</span>) <span class="k">return</span> res.<span class="f">status</span>(<span class="n">403</span>).<span class="f">json</span>({ message: <span class="s">"You are not at the event location"</span> });</pre>
+      <div class="hl" style="grid-template-columns:1fr">
+        <div class="rv"><div class="k">Why both checks</div><b>Token and place</b><p>The 30-second token proves you’re looking at the screen now; the geofence proves you’re in the room. Either one alone is easy to beat.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">04 — Judging</div>
+      <h2>Judges score, leaderboards move, results lock</h2>
+      <p>Judges get their own panel and login. Scores feed live event leaderboards and a global ranking, and once submitted they’re locked, so nobody can quietly change a result afterwards.</p>
+      <button class="cs-btn" data-replay-for="boardStage" type="button">Replay ↻</button>
+    </div>
+    <div class="stage svgstage" id="boardStage"><svg id="boardSvg" role="img" aria-label="Judges’ scores arrive, teams reorder on the leaderboard, and scores lock"></svg></div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">05 — Rewards</div>
+      <h2>Points that add up to a tier</h2>
+      <p>Students earn reward points per event. Clubs and colleges accumulate points and climb tiers, which gives campuses a reason to keep their events on the platform.</p>
+    </div>
+    <div class="ladder" id="ladder">
+      <div class="rung" style="--c:#c58a5a;--h:28%"><span>Tier 1</span><b>Bronze</b></div>
+      <div class="rung" style="--c:#b9bcc2;--h:48%"><span>Tier 2</span><b>Silver</b></div>
+      <div class="rung" style="--c:#e39b17;--h:70%"><span>Tier 3</span><b>Gold</b></div>
+      <div class="rung" style="--c:#8fb7ff;--h:92%"><span>Tier 4</span><b>Platinum</b></div>
+    </div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec">
+      <div class="no">06 — API platform</div>
+      <h2>The whole event engine, sold as an API</h2>
+      <p>Outside organisers can run events through HackByteCodex with an API key: events, forms, registrations, judges and analytics. Plans are tier-gated, keys rotate, and every key gets its own rate limit.</p>
+    </div>
+    <div class="stage svgstage" id="rateStage"><svg id="rateSvg" role="img" aria-label="The same traffic hits three plans; BASIC and PRO start returning 429 once they pass 30 and 120 requests per minute; ENTERPRISE stays under 500"></svg></div>
+    <div class="hl" style="margin-top:16px">
+      <div class="rv"><div class="k">Plans</div><b>Basic · Pro · Enterprise</b><p>5 / 25 / unlimited events a month, 100 / 1,000 / unlimited registrations per event, 3 / 15 / unlimited judges. Enforced by a tier guard on every route.</p></div>
+      <div class="rv"><div class="k">Billing</div><b>Razorpay subscriptions</b><p>Monthly or yearly orders, payment verification, and a raw-body webhook so subscription state can’t drift from what Razorpay says.</p></div>
+      <div class="rv"><div class="k">Keys</div><b>Rotate, expire, audit</b><p>Keys expire after 30, 90 or 365 days depending on plan, can be rotated (with an email to the owner), and API calls are written to an audit log.</p></div>
+    </div>
+  </section>
+
+  <section class="plate">
+    <div class="spec">
+      <div class="no">07 — Email</div>
+      <h2>11 transactional emails, sent at the right moment</h2>
+      <p>EJS templates sent through Resend, one for every moment where a person needs to know something happened.</p>
+    </div>
+    <div class="mails" id="mails">
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>Welcome<small>on registration</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>Google welcome<small>first Google sign-in</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>Password set<small>after Google → password</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>Event registration<small>confirmation + details</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>Judge invite<small>panel access</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>College request<small>to the Super Admin</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>New user welcome<small>auto-login flow</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>Admin broadcast<small>from the dashboard</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>API platform welcome<small>new organiser</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>API key rotated<small>security notice</small></span></div>
+      <div class="mail"><svg viewBox="0 0 32 24" aria-hidden="true"><rect x="1" y="1" width="30" height="22" rx="3" fill="#fff" stroke="#141312" stroke-width="1.5"/><path d="M2 3l14 10L30 3" fill="none" stroke="#141312" stroke-width="1.5"/></svg><span>Password reset<small>platform accounts</small></span></div>
+    </div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec">
+      <div class="no">08 — By the numbers</div>
+      <h2>Three apps, one API, one developer</h2>
+    </div>
+    <div class="nums">
+      <div class="rv"><b data-count="59">~59K</b><span>lines across 3 repos</span></div>
+      <div class="rv"><b>125</b><span>REST endpoints</span></div>
+      <div class="rv"><b>21</b><span>Mongoose models (12 core + 9 API)</span></div>
+      <div class="rv"><b>58</b><span>commits, all mine</span></div>
+    </div>
+    <div class="apps" style="margin-top:16px">
+      <div class="app rv"><div class="k">Public site</div><h3>Next.js 16 · React 19</h3><p>Events, chapters, clubs, project showcase, judge panel, QR check-in and the API docs. SEO-first, with dynamic metadata, structured data and a sitemap, so student projects can rank on Google.</p><div class="chips"><span>Tailwind 4</span><span>Framer Motion</span><span>Radix</span><span>Embla</span></div></div>
+      <div class="app rv"><div class="k">Dashboard</div><h3>Admin &amp; leads</h3><p>Colleges, clubs, events, a registration form builder, judges, attendance and analytics for every role in the hierarchy.</p><div class="chips"><span>Next.js 16</span><span>Recharts</span><span>QR codes</span><span>shadcn/ui</span></div></div>
+      <div class="app rv"><div class="k">API</div><h3>Express · MongoDB</h3><p>Role-based JWT auth with Google sign-in, Cloudinary media uploads, Razorpay billing, Resend email, rate limiting and audit logs.</p><div class="chips"><span>Mongoose</span><span>JWT</span><span>Helmet</span><span>Cloudinary</span><span>Razorpay</span><span>Resend</span></div></div>
+    </div>
+  </section>
+
+  <section class="plate full">
+    <div class="spec"><div class="no">Proof</div></div>
+    <table class="proof-t">
+      <tr><td>Live platform (GKV chapter)</td><td><a href="https://gkv.hackbytecodex.com" target="_blank" rel="noopener">gkv.hackbytecodex.com</a></td></tr>
+      <tr><td>Source</td><td><a href="https://github.com/deenu-cse/hackbytecodex" target="_blank" rel="noopener">github.com/deenu-cse/hackbytecodex</a></td></tr>
+    </table>
+  </section>
+
+  <a class="cs-next" href="sarra.html" data-transition data-label="Next case study" data-cursor="Next">
+    <span class="mono">Next case study · 01</span>
+    <b>SARRA <i aria-hidden="true">→</i></b>
+  </a>
+  <div class="cs-foot">
+    <span class="mono">Deendayal Verma · Creator &amp; full-stack engineer, HackByteCodex</span>
+    <span class="mono">Scene team names are illustrative; logic mirrors the production code</span>
+  </div>
+</div>
+</main>
+
+<div class="wipe" id="wipe" aria-hidden="true"><span>Opening</span></div>
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/SplitText.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/js/lib/hbc.js" defer></script>
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/case.js" defer></script>
+</body>
+</html>
